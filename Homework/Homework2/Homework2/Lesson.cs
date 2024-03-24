@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homework2
 {
-  public class Lesson
+    public class Lesson
     {
         public int Group { get; set; }
         public Guid Teacher { get; set; }
