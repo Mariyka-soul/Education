@@ -53,13 +53,17 @@ namespace Homework2
                     return false; 
                 }
             }
+
             return true;
         }
 
         public List<Lesson> GetLessonsForDay(int group, string day)
         {
             List<Lesson> lessons = LoadLessons();
+
+            // Filter lessons for the specified group and day
             List<Lesson> lessonsForDay = lessons.Where(l => l.Group == group && l.Day == day).ToList();
+
             return lessonsForDay;
         }
 
@@ -73,7 +77,11 @@ namespace Homework2
         public bool IsSlotAvailable(int group, string day, string time)
         {
             List<Lesson> lessons = LoadLessons();
+
+            // Count lessons for the specified group, day, and time slot
             int count = lessons.Count(l => l.Group == group && l.Day == day && l.Time == time);
+
+            // Check if the slot is available (less than 3 lessons already scheduled)
             return count < 3;
         }
 
@@ -89,5 +97,7 @@ namespace Homework2
 
             return lessonsForTime;
         }
+
+
     }
 }

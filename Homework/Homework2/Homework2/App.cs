@@ -62,9 +62,11 @@ namespace Homework2
                         Console.WriteLine("Invalid option. Please select again.");
                         break;
                 }
+
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
             }
+
         }
 
         public void AddStudent()
@@ -91,6 +93,7 @@ namespace Homework2
                     validInput = true;
                 }
             } while (!validInput);
+
             var studentService = new StudentService();
             var student = new Student
             {
@@ -100,6 +103,7 @@ namespace Homework2
                 Group = studentGroup
             };
             studentService.AddStudent(student);
+
             Console.WriteLine($"Student {student.Name} {student.Surname} added");
         }
 
@@ -248,5 +252,6 @@ namespace Homework2
             }
         }
     }
+
 }
 

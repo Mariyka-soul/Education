@@ -9,6 +9,8 @@ namespace Homework2
 {
     public class TeacherService
     {
+
+
         private const string filePath = "teachers.json";
 
         public void AddTeacher(Teacher teacher)
@@ -90,6 +92,7 @@ namespace Homework2
         {
             var lessonManager = new LessonManager("lessons.json");
             var lessons = lessonManager.LoadLessons();
+
             var lessonsToRemove = lessons.Where(lesson => lesson.Teacher == teacherId).ToList();
             foreach (var lesson in lessonsToRemove)
             {
