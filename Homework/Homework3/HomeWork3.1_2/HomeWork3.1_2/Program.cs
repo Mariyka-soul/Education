@@ -51,7 +51,6 @@ namespace SimpleCalculator
                 {
                     Console.WriteLine("Invalid operation number.");
                 }
-
                 Console.WriteLine("\nPress any key to continue...");
                 Console.ReadKey(); 
             }

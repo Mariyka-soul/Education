@@ -18,6 +18,7 @@ namespace HomeWork3._2
             _items = new T[count];
             _count = 0;
         }
+
         public IEnumerator<T> GetEnumerator()
         {
             foreach(T item in _items)

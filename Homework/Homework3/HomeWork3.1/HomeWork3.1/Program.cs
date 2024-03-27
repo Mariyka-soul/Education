@@ -54,7 +54,6 @@
                     },
                 },
             };
-
             var console = new ConsoleService(requests);
             console.Start();
         }

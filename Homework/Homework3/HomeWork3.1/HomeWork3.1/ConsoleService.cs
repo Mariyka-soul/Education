@@ -58,7 +58,6 @@ namespace HomeWork3._1
                         Console.WriteLine("Wrong operation");
                         break;
                 }
-
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey(); 
             } while (operation != "0");

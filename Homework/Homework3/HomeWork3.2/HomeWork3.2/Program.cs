@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 
 namespace HomeWork3._2
 {
@@ -6,7 +7,7 @@ namespace HomeWork3._2
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Hello, homeWork3.2")
         }
     }
 }
