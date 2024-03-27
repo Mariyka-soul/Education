@@ -7,7 +7,7 @@ namespace HomeWork3._2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, homeWork3.2")
+            Console.WriteLine("Hello, homeWork3.2");
         }
     }
 }
